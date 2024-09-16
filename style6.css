@@ -5,8 +5,11 @@ body {
 	 background-position: center top;
 	 background-repeat: no-repeat;
 	 background-size: cover;
+	 background-attachment: fixed;
 }
-
+  /*  Shorthand Background
+     color > image > position > [size] > attachment
+  */
 main {
 	 background-color: white;
 	 width: 400px;
