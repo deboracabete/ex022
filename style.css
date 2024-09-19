@@ -1,0 +1,122 @@
+@font-face {
+	 font-family: 'JMHTypewriter';
+	 src: url('../fontes/JMH Typewriter-Thin.ttf') format('Opentype');
+	 font-weight: normal;
+	
+}
+
+@font-face {
+	 font-family: 'MomsTypewriter';
+	 src: url('../fontes/Mom«t___.ttf') format('TrueType');
+	 font-weight: normal;
+}
+
+:root {
+	 --fonte1: Verdana, Geneva, Tahoma,  sans-serif;
+	 --fonte2: 'JMHTypewriter', sans-serif;
+	 --fonte3: 'MomsTypewriter';
+	
+}
+
+* {
+	 margin: 0px;
+	 padding: 0px;
+	
+}
+
+
+
+html, body {
+	 min-height: 100vh;
+	 background-color: darkgray;
+}
+
+header {
+	 background-color: black;
+	 color: white;
+	 text-align: center;
+	
+}
+
+header > h1 {
+	 padding-top: 50px;
+	 font-variant: small-caps;
+	 font-family: var(--fonte2);
+	 font-size: 3em;
+	 
+}
+ header > p {
+	 padding-top: 10px;
+	 padding-bottom: 50px;
+	 font-family: var(--fonte1);
+	 
+	
+ }
+ 
+a {
+	 color: white;
+	 text-decoration: none;
+	 font-weight: bolder;
+	 font-family: var(--fonte2);
+	
+}
+
+a:hover {
+	 text-decoration: underline;
+} 
+
+section {
+	 padding-top:10vh;
+	 padding-bottom: 10vh ;
+	 line-height: 2em;
+	 padding-left: 30px;
+	 font-family: var(--fonte3);
+	 font-size: 1em;
+}
+
+section.normal >p {
+	padding: 30px;
+	
+}
+
+
+section.normal {
+	 color: black;
+	 background-color: white;
+	 
+}
+
+section.imagem {
+	 background-color: #616161;
+	 color: white;
+	 background-attachment: fixed;
+	
+}
+
+section.imagem > p {
+	 background-color: #00000045;
+	 width: 400px;
+	 text-shadow:5px 3px 9px black;
+	 margin: 20px;
+	 padding: 15px;
+	
+}
+
+section#img01 {
+	background-image: url('../imagens/background001.jpg');
+	background-position: center right;
+	background-size: cover;
+}
+
+section#img02 {
+	background-image: url('../imagens/background002.jpg');
+	background-position: center right;
+	background-size: cover;
+}
+
+footer {
+	 background-color: black;
+	 color: white;
+	 text-align: center;
+	 padding: 10px;
+}
